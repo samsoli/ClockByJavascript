@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #176db3;
+    font-family: 'Poppins', sans-serif;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    height: 550px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #ffff;
+}
+.top-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.top-menu h3 {
+font-size: 14px;
+font-weight: 400;
+margin-top: 15px;
+color: black;
+}
+.battery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.battery span {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 4px;
+}
+.battery i {
+    font-size: 20px;
+}
+.wrap{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    border-radius: 100%;
+    margin-top: -30px;
+    overflow: hidden;
+}
+.hour, .minute{
+    position: absolute;
+    width: 6px;
+    height: 100px;
+    background-color: black;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    margin: auto;
+    top: -27%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+}
+.minute{
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    top: -38%;
+    left: 0;
+    transform: rotate(90deg);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+.second{
+    position: absolute;
+    width: 2px;
+    height: 90px;
+    background-color:#e55182;
+    border-radius: 4px;
+    margin: auto;
+    top: -26%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+.dot{
+    position: absolute;
+    margin: auto;
+    width: 12px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 100px;
+    z-index: 1;
+    background-color: white;
+    border: 2px solid black;
+}
+.timing{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#show-time{
+    width: 50%;
+}
+.hours, .mins, .secs {
+    font-size: 3rem;
+    font-weight: bold;
+}
